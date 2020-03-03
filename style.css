@@ -1,0 +1,88 @@
+.formulation-row{
+    display:flex;
+}
+.title{
+    flex:3;
+    font-weight:bold;
+}
+.description{
+    flex:6;
+}
+.flex-box{
+    display:flex;
+}
+.show-detail{
+    padding: 0px 25px;
+}
+.btn{
+    padding: 13px 10px;
+    border-radius:5px;
+    border : none;
+    margin-bottom: 15px;
+    cursor:pointer;
+    transition: .5s;
+    font-size: 15px;
+    font-weight:bold;
+}
+.btn:focus{
+    outline:none;
+}
+.btn:hover{
+    opacity:0.8;
+}
+
+.ran-btn{
+    float:right;
+}
+
+.red{
+    background-color:#DB2828;
+    color:#fff;
+}
+.orange{
+    background-color:#F2711C;
+    color:#fff;
+}
+.yellow{
+    background-color:#FBBD08;
+    color:#fff;
+}
+.olive{
+    background-color:#B5CC18;
+    color:#fff;
+}
+.green{
+    background-color:#21BA45;
+    color:#fff;
+}
+.teal{
+    background-color:#00B5AD;
+    color:#fff;
+}
+.violet{
+    background-color:#6435C9;
+    color:#fff;
+}
+.purple{
+    background-color:#A333C8;
+    color:#fff;
+}
+.pink{
+    background-color:#E03997;
+    color:#fff;
+}
+.btn.right{
+    float:right;
+    border-radius:0px;
+}
+#btn-auto{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+#btn-manual{
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.active{
+    background-color: #888888;
+}

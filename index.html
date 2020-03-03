@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./p5.min.js"></script>
+    <script src="./PriorityQueue.js"></script>
+    <script src="./Cell.js"></script>
+    <script src="./Board.js"></script>
+    <script src="./Chromosome.js"></script>
+    <script src="./Population.js"></script>
+    <script src="./sketch.js"></script>
+   <link rel="stylesheet" href="./style.css"></link>
+</head>
+<body>
+    <div>
+        <h1>Select Algorithm 
+             <button class="btn violet ran-btn" onclick="mostChallengingBoard()">Most difficult Board</button>
+             <button class="btn teal ran-btn" onclick="randomizeTheCurrentBoard()">Randomize Board</button>
+        </h1>
+        <div class="btn-group">
+            <button class="btn red" onclick="setAlgorithmChoice(0)">Breath First Search</button>
+            <button class="btn orange" onclick="setAlgorithmChoice(1)">Hill Climbing</button>
+            <button class="btn green" onclick="setAlgorithmChoice(2)">Shortest Path First Search</button>
+            <button class="btn purple" onclick="setAlgorithmChoice(3)">A* Search</button>  
+            <button class="btn yellow" onclick="setAlgorithmChoice(4)">Population Based Approach</button>  
+            <button class="btn right" id="btn-auto" onclick="onAutoClick()">Auto</button>
+            <button class="btn right" id="btn-manual" onclick="onManualClick()">Manual</button>
+        </div>
+    </div>
+    <div class="flex-box">
+        <div>
+
+            <div id="sketch-holder">
+            </div>
+            <div class="formulation">
+                <div class="formulation-row">
+                    <div class="title">Environment</div>
+                    <div class="description">Board</div>
+                </div>
+                <div class="formulation-row">
+                    <div class="title">State Space</div>
+                    <div class="description">The Cells</div>
+                </div>
+                <div class="formulation-row">
+                    <div class="title">Actions</div>
+                    <div class="description">Movement to the next cell</div>
+                </div>
+                <div class="formulation-row">
+                    <div class="title">Perception/Observations</div>
+                    <div class="description">The distance of movement the ai can make to the next cell</div>
+                </div>
+            </div>
+        </div>
+        <div class="show-detail">
+            <p id="detail-p"></p>
+        </div>
+    </div>
+   
+</body>
+</html>
