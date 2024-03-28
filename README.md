@@ -1,6 +1,4 @@
-# First Assignment for Intro To AI
-
-Currently I have finished to problem #3.
+# AI Puzzle Solver
 
 Either clone or download the files and go into the index.html.
 
